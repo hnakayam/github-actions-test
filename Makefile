@@ -1,7 +1,15 @@
-include $(FBDIR)/configs/$(CONFIGLIST)
+# note: build docker image using Ubuntu 18.04 or newer
+# requires docker engine and required components
+# see https://docs.docker.com/engine/install/ubuntu/
 
-VERSION=$(fbdockerimgversion)
-REPO=$(fbdockerrepo)
+#include $(FBDIR)/configs/$(CONFIGLIST)
+
+#VERSION=$(fbdockerimgversion)
+#REPO=$(fbdockerrepo)
+
+# replace REPO for your docker HUB path or equivalents
+REPO=hnakayam/fbubuntu
+VERSION=18.04
 
 build:
 	@if [ -n "$(http_proxy)" -o -n "$(https_proxy)" ]; then \
