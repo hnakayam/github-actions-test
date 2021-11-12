@@ -5,10 +5,8 @@ name: docker-publish
 $ for overall workings
 
 on:
-  push:
-    branches: [ main ]
-    # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
+  release:
+    types: [published]
 
 env:
   # Use docker.io for Docker Hub
