@@ -2,7 +2,7 @@ name: docker-publish
 
 # see 
 # https://docs.github.com/en/actions/publishing-packages/publishing-docker-images#publishing-images-to-docker-hub
-$ for overall workings
+# for overall workings
 
 on:
   release:
